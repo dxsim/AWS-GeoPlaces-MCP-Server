@@ -1,6 +1,7 @@
 # AWS-GeoPlaces-MCP-Server
 Directly access AWS location services using the GeoPlaces v2 API, provides geocoding or reverse-geocoding capabilities like the Google Maps API. 
 
+[![smithery badge](https://smithery.ai/badge/@dxsim/aws-geoplaces-mcp-server)](https://smithery.ai/server/@dxsim/aws-geoplaces-mcp-server)
 
 ## Prerequisites
 1. AWS Permissions needed to host MCP for Location Service, Refer to the [example json file](sample_IAM_policy.json) for the minimum viable permissions.
