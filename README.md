@@ -2,10 +2,10 @@
 Directly access AWS location services using the GeoPlaces v2 API, provides geocoding or reverse-geocoding capabilities
 
 
-> NOTE:
-> This template only contains a README.md file.
+## Prerequisites
+1. AWS Permissions needed to host MCP for Location Service, Refer to the [example json file](sample_IAM_policy.json) for the minimum viable permissions.
 
-## Setup
+## Development
 
 1. Install [`uv`](https://docs.astral.sh/uv/#__tabbed_1_2) for Python project management:
 
@@ -21,19 +21,13 @@ Directly access AWS location services using the GeoPlaces v2 API, provides geoco
    powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
    ```
 
-2. If no `pyporject.toml` file exists, start a new project:
-
-   ```bash
-   uv init
-   ```
-
-3. Create a virtual environment
+2. Create a virtual environment
 
    ```bash
    uv venv --python 3.13
    ```
 
-4. Start the virtual environment
+3. Start the virtual environment
 
    ```bash
    source .venv/bin/activate
@@ -50,6 +44,7 @@ Directly access AWS location services using the GeoPlaces v2 API, provides geoco
    ```bash
    uv add "mcp[cli]"
    uv add "boto3"
+   uv add "python-dotenv"
    ```
 
 ## Quickstart
@@ -57,7 +52,7 @@ Directly access AWS location services using the GeoPlaces v2 API, provides geoco
 1. [Create your MCP using Python](https://modelcontextprotocol.io/introduction)
 2. Run your server in the MCP Inspector:
    ```bash
-   mcp dev <your_server_name.py>
+   mcp dev server.py
    ```
 3. Install the server in Claude Desktop:
    ```bash
