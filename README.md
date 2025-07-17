@@ -1,3 +1,5 @@
+[![MseeP.ai Security Assessment Badge](https://mseep.net/pr/dxsim-aws-geoplaces-mcp-server-badge.png)](https://mseep.ai/app/dxsim-aws-geoplaces-mcp-server)
+
 # AWS-GeoPlaces-MCP-Server
 Directly access AWS location services using the GeoPlaces v2 API, provides geocoding or reverse-geocoding capabilities like the Google Maps API. 
 
